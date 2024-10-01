@@ -1,0 +1,29 @@
+name: Setup Accounting App
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if necessary
+
+jobs:
+  setup:
+    runs-on: linux-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # Specify the Node.js version you want to use
+
+    - name: Install dependencies
+      run: |
+        cd backend
+        npm install
+
+    - name: Run the setup script
+      run: |
+        chmod +x setup_accounting_app.sh
+        ./setup_accounting_app.sh
