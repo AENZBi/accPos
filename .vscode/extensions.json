@@ -3,6 +3,8 @@
         "github.vscode-github-actions",
         "ms-vscode.node-debug",
         "ms-vscode.js-debug",
-        "yutengjing.package-manager-enhancer"
+        "yutengjing.package-manager-enhancer",
+        "vymarkov.firebase-explorer",
+        "googlecloudtools.firebase-dataconnect-vscode"
     ]
 }
