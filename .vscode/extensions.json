@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "github.vscode-github-actions"
+        "github.vscode-github-actions",
+        "ms-vscode.node-debug",
+        "ms-vscode.js-debug",
+        "yutengjing.package-manager-enhancer"
     ]
 }
